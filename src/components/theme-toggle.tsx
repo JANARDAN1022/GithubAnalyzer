@@ -14,6 +14,9 @@ export function ThemeToggle() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
+  useEffect(() => {
+    console.log(theme, "current theme");
+  }, [theme]);
   // Ensure component is mounted before accessing theme
   useEffect(() => {
     setMounted(true);

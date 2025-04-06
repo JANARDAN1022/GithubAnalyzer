@@ -116,7 +116,7 @@ export function LanguageBreakdown({
                 dataKey="count"
                 nameKey="name"
               >
-                {data.map((entry, index) => (
+                {data.map((_: any, index) => (
                   <Cell
                     key={`cell-${index}`}
                     fill={COLORS[index % COLORS.length]}
